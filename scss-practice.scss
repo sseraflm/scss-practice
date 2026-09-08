@@ -1,0 +1,43 @@
+$primary-color: #FFE1FF;
+$secondary-color: #000080;
+$font: Helvetica, sans-serif;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin colorStyle($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+%mainTheme {
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-family: $font;
+    transition: 0.5s;
+    }
+
+#red {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $font;
+    @include flex-center();
+}
+
+#blue {
+
+    @include flex-center();
+
+    p {
+    @extend %mainTheme;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+    }
+    a {
+    @include colorStyle($secondary-color, $primary-color); 
+    }
+}

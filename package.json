@@ -1,0 +1,22 @@
+{
+  "name": "scss-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseraflm/scss-practice.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sseraflm/scss-practice/issues"
+  },
+  "homepage": "https://github.com/sseraflm/scss-practice#readme",
+  "devDependencies": {
+    "sass": "^1.104.0"
+  }
+}

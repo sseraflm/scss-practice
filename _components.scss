@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+#red {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $font;
+    @include flex-center();
+}
+
+#blue {
+
+    @include flex-center();
+
+    p {
+    @extend %mainTheme;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+    }
+    a {
+    @include colorStyle($secondary-color, $primary-color); 
+    }
+}

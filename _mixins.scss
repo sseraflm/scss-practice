@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin colorStyle($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+%mainTheme {
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-family: $font;
+    transition: 0.5s;
+    }
